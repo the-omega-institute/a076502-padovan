@@ -1,6 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite this reproducibility package and its accompanying research note."
 type: software
+doi: "10.5281/zenodo.22979217"
+version: "v1.0.1"
+date-released: "2026-09-26"
 title: "A Padovan-automatic description of a nested recurrence: reproducibility package"
 authors:
   - family-names: "Cloitre"

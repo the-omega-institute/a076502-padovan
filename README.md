@@ -93,8 +93,11 @@ See [RIGHTS.md](RIGHTS.md) for the current rights statement.
 
 ## Archive and integrity
 
-A Zenodo DOI will be added after the GitHub integration is enabled and the
-first release is archived. Repository publication alone does not create a DOI.
+Version **v1.0.1** is archived on Zenodo:
+[10.5281/zenodo.22979217](https://doi.org/10.5281/zenodo.22979217).
+This DOI identifies the exact release, including its proof sources,
+computational certificates, manuscript, and verification records. The current
+branch also includes the DOI in the manuscript and citation metadata.
 
 `SHA256SUMS.json` records the distributed file hashes. Check them before
 running programs that regenerate reports:
