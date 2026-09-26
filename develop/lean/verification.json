@@ -1,0 +1,720 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checked_at_utc": "2026-09-23T05:33:27.648028+00:00",
+  "toolchain": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "root_module": "Main",
+  "module_count": 69,
+  "build_context": "isolated_fresh_dependencies_and_local_modules",
+  "source_shortcut_scan": "passed",
+  "axiom_closures": {
+    "CloitreCollaboration.Main.a_recurrence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.identification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.discrepancy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.paper_discrepancy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.exact_offsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.morphic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.asymptotic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.not_eventually_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Main.four_balanced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.EffectiveExtrema.global_enclosures": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.EffectiveExtrema.widths_tendsto_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.EffectiveExtrema.endpoints_converge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Morphic.prefix_ones_computable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Morphic.ones_frequency": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Morphic.word_four_balanced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Morphic.word_not_eventually_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Morphic.balance_witnesses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CloitreCollaboration.Morphic.exact_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "modules": {
+    "AutomataCertificate": {
+      "source": "AutomataCertificate.lean",
+      "sha256": "2cf066f66e6dbb3105e6fe652cb8c11e111d0c1a36a81710444af7e6d7f29034",
+      "olean_sha256": "f6b3dac1a4503bf188b686f2eb7fbd895f9c3494fb6752cbfe80d9e112416fc0",
+      "local_imports": []
+    },
+    "BalanceSharpness": {
+      "source": "BalanceSharpness.lean",
+      "sha256": "31168a44f14f2b7563f91c50d9281241796c31c926402024428318256c6da778",
+      "olean_sha256": "d05bf9cff00b5004c143ef966888a0a14d71f56ec4db3d1dd4790930177b6de3",
+      "local_imports": [
+        "WordConsequences"
+      ]
+    },
+    "CandidateDiscrepancy": {
+      "source": "CandidateDiscrepancy.lean",
+      "sha256": "cc49199a3a41e0af280f6cb0535e25a15833aa2d1083bd74523ef920967e66ab",
+      "olean_sha256": "c0fe3f2742794c140dbabeeb60856e52b8008e1a1a9a7f8d034884bacb1d12d4",
+      "local_imports": [
+        "SuffixSoundness",
+        "GreedyRepresentation",
+        "GreedyTail"
+      ]
+    },
+    "CanonicalCandidate": {
+      "source": "CanonicalCandidate.lean",
+      "sha256": "7612da7b16bd395c690ca88ef7cfe6d42f78cee7b6bb19e4597e30918cea304a",
+      "olean_sha256": "9bce1e07ceaaad219e2f209f3407b7d89c69104124fb3de3a29ab21dc8a53800",
+      "local_imports": [
+        "CandidateDiscrepancy",
+        "RepresentationIndependence",
+        "PrimitiveSemantics"
+      ]
+    },
+    "CompositionSemantics": {
+      "source": "CompositionSemantics.lean",
+      "sha256": "ba8fc6b7ed753e90cb59318d4ed994c50f0fd22f6c15277f6cfd27a4a83f1c6f",
+      "olean_sha256": "5c57d9f0c40c3f5564da456919875559ac39e5faa537685dc15443fbe7ea5552",
+      "local_imports": [
+        "PrimitiveSemantics",
+        "Generated.Recurrence"
+      ]
+    },
+    "ComputableSequence": {
+      "source": "ComputableSequence.lean",
+      "sha256": "a158c7ecff8ff00076c80a9ee3e7c102a1ad70308b5340bf4733f171ed28d2d8",
+      "olean_sha256": "c8834b5980e329a6bdfea53ad97054c81e9a5d58f35bf560a54965b7ae05ff2b",
+      "local_imports": [
+        "FinalIdentification"
+      ]
+    },
+    "ConcreteCertificates": {
+      "source": "ConcreteCertificates.lean",
+      "sha256": "003cac67f9d4642ebd6374954732dffbd4787b4585d5699660be55aa89d98718",
+      "olean_sha256": "d88a4490586f315f0c995b6097fd5adf4966851e48e9abf47c8a09b1f52cadac",
+      "local_imports": [
+        "AutomataCertificate"
+      ]
+    },
+    "ConstantSemantics": {
+      "source": "ConstantSemantics.lean",
+      "sha256": "dfcdf46463f4e11a11d6bd7d9ee88dfb841e77cd11026b8108b08c1560b6de1a",
+      "olean_sha256": "148668acb9f93178756d1d0a1722450ce7b6e1464f161d512aa4fc2cb2b54bc3",
+      "local_imports": [
+        "PrimitiveSemantics",
+        "Generated.One"
+      ]
+    },
+    "DifferenceSemantics": {
+      "source": "DifferenceSemantics.lean",
+      "sha256": "576a4c2369a438ee8d8dd950cd7b0fb869478fed12529efd42fc465b4dc2129a",
+      "olean_sha256": "1217327eae6e7bcf476566f2032710cc744c25ab5c9d7ec6039da3a452125228",
+      "local_imports": [
+        "ConstantSemantics",
+        "GraphCandidate",
+        "Generated.DifferenceData"
+      ]
+    },
+    "Discrepancy": {
+      "source": "Discrepancy.lean",
+      "sha256": "7003f4acba50da4de99689b15d3b2b7e324655701551f99dae2fa9e2e6ef4638",
+      "olean_sha256": "16d81201925c59e7a6a8e9b0458d2bf3b05b1016b57378fcce7513efeab7c714",
+      "local_imports": [
+        "RecurrenceBridge"
+      ]
+    },
+    "Domains": {
+      "source": "Domains.lean",
+      "sha256": "ec355656aaa0a49a718414fe2c292b614e8d317104d9320cbf10d1a0fdcd52dd",
+      "olean_sha256": "acee2138d722c3d713335b535f5bfcaf601eccda4ac8a93eed4f8f93c2ca2931",
+      "local_imports": [
+        "ConcreteCertificates",
+        "ConstantSemantics",
+        "RepresentationIndependence"
+      ]
+    },
+    "EffectiveExtrema": {
+      "source": "EffectiveExtrema.lean",
+      "sha256": "e65828954e42f5ae1db6865f2c6e6f01b6922116eabdf7c0d134eb483f0837e4",
+      "olean_sha256": "195d4379f982341e8f75c24d0595aa51618566f8f18ca36d2d671bfb01aa58bd",
+      "local_imports": [
+        "PrefixCompression",
+        "ComputableSequence",
+        "RationalRootBrackets",
+        "WeightGrowth"
+      ]
+    },
+    "FinalIdentification": {
+      "source": "FinalIdentification.lean",
+      "sha256": "e15cbd327910874e3f47a82a18d91dc6a9d879fce8dabf643da0fa531dffc697",
+      "olean_sha256": "e3f245b82f92a3fde7786062ba1c348a378846c6a173a4c1219911fa707cd568",
+      "local_imports": [
+        "GraphCandidate",
+        "CompositionSemantics",
+        "ConstantSemantics",
+        "Generated.AdderTrace",
+        "Generated.TotalRecurrence"
+      ]
+    },
+    "FirstDifference": {
+      "source": "FirstDifference.lean",
+      "sha256": "d2ccad6885a145359f02531def34c0f36d475843aa38a9564b1771aec820ccda",
+      "olean_sha256": "ee20ebbacd7eed0ea7eb437b0d326925c444f469a8955c4264dc36eccb20aa08",
+      "local_imports": [
+        "FinalIdentification",
+        "Generated.DifferenceTrace",
+        "Generated.TotalDifference"
+      ]
+    },
+    "Generated.Adder": {
+      "source": "Generated/Adder.lean",
+      "sha256": "b0cc637d4bfdf84e83b36547fd9e4e7ff028804cbf937eab3e7313c8c045f54a",
+      "olean_sha256": "dfa9cd37cfb0dde0aa90fd17e0b08913cc7fb09ffcab1d40b375689910afac74",
+      "local_imports": [
+        "AutomataCertificate"
+      ]
+    },
+    "Generated.AdderTrace": {
+      "source": "Generated/AdderTrace.lean",
+      "sha256": "9bcb27abaa5cfa7bfb5134aa3b64695bedc897a74d13cce99d13c9c8d8fbcfab",
+      "olean_sha256": "8de0267e68d7a7c7cd431a091cc80e39f07cfba096b2ee99d73afa8746014e6d",
+      "local_imports": [
+        "Generated.Adder",
+        "PrimitiveSemantics"
+      ]
+    },
+    "Generated.BH": {
+      "source": "Generated/BH.lean",
+      "sha256": "8f7907ef8a781ae02c6a4c043f058ffc91053b526f0c729bd6159bdda51a8404",
+      "olean_sha256": "067e412f6b3c70b01d517c1ab25b2df3c642039d463d0b59589998a0d2a86628",
+      "local_imports": [
+        "Generated.BHProduct"
+      ]
+    },
+    "Generated.BHProduct": {
+      "source": "Generated/BHProduct.lean",
+      "sha256": "0c347f23f1d6fa219013185713c2cff4ff3b455bda86ecd6320ee911acb0fe22",
+      "olean_sha256": "ebf5eb95e18a20ff808d47c921b87c92799303755f33c7bb65aad61babbef1b8",
+      "local_imports": [
+        "Generated.Graph",
+        "Generated.H"
+      ]
+    },
+    "Generated.BK": {
+      "source": "Generated/BK.lean",
+      "sha256": "45cf54f76724aae744f8a7c8bf883ea06584717454b65e8f973eebb6a4ebf431",
+      "olean_sha256": "16a65cf04e7a6c3165477edd415fd9648eb45b81ef48fb43262f8042de3d77b3",
+      "local_imports": [
+        "Generated.BKProduct"
+      ]
+    },
+    "Generated.BKProduct": {
+      "source": "Generated/BKProduct.lean",
+      "sha256": "32a13c510f31a255ff9fd292562d11e006312e9d166e93adb60e722b00059038",
+      "olean_sha256": "390eb4f00f08daef2b3177d28eb448cefea6bdcafc0f97018961b36dd5a90dfa",
+      "local_imports": [
+        "Generated.Graph",
+        "Generated.K"
+      ]
+    },
+    "Generated.Difference": {
+      "source": "Generated/Difference.lean",
+      "sha256": "f4549676ae5f11bf91e3c705f413665a9a35bc529e2733e4dd53788bd837e1c6",
+      "olean_sha256": "14599d2791e0807dbc951342bda8e977a5922d2d10f265afde4fba291fa1e069",
+      "local_imports": [
+        "Generated.DifferenceProduct"
+      ]
+    },
+    "Generated.DifferenceData": {
+      "source": "Generated/DifferenceData.lean",
+      "sha256": "992bfa2c13653488f548bcd672b04afded198800f898eac94ea03fbd038ca6a9",
+      "olean_sha256": "c882eb6cfccd92d070549512b83d0f3eafa15f6bf9c278276ec55423b950b210",
+      "local_imports": [
+        "AutomataCertificate"
+      ]
+    },
+    "Generated.DifferenceGraph": {
+      "source": "Generated/DifferenceGraph.lean",
+      "sha256": "1a911f2ec07449238301929d9e59a94ad55ea18153cb36ff7f170c2822b972a6",
+      "olean_sha256": "b5938420ada2654787491d84b4678c4f82ba4829d0bf43b1b253b9913f9f12a7",
+      "local_imports": [
+        "AutomataCertificate"
+      ]
+    },
+    "Generated.DifferenceProduct": {
+      "source": "Generated/DifferenceProduct.lean",
+      "sha256": "5642b42a91dd9adc69979a47523aec8cfdbc4f6200f08eac91e9eec5aab126ac",
+      "olean_sha256": "ef6cc423488c3641fe296330dc9d1bdff16d022b660abf9bbd88ff3e35f709c4",
+      "local_imports": [
+        "Generated.Adder",
+        "Generated.DifferenceGraph",
+        "Generated.Graph",
+        "Generated.NextB"
+      ]
+    },
+    "Generated.DifferenceTrace": {
+      "source": "Generated/DifferenceTrace.lean",
+      "sha256": "9521ca1f946e0cb01e61fff698431dd44497450fabc7eb6655627e42ab5eaaee",
+      "olean_sha256": "43b00789146bb35a2875b87294df199422a252cb2a2fcd2dbcbbee9350944b36",
+      "local_imports": [
+        "DifferenceSemantics",
+        "Generated.DifferenceGraph"
+      ]
+    },
+    "Generated.Graph": {
+      "source": "Generated/Graph.lean",
+      "sha256": "b170094773fbb31ea74e3d00979f93fc818c5e96ab2594fe905a7bb4cb9dd009",
+      "olean_sha256": "3392f376534648462171c27d492f3075cd3a1dc6a196f83884c3dc878d6b4a41",
+      "local_imports": [
+        "AutomataCertificate"
+      ]
+    },
+    "Generated.GraphDomain": {
+      "source": "Generated/GraphDomain.lean",
+      "sha256": "b030c385eaed9b1faabe85206e305bef88b377b763b972b2dd55c56df815b931",
+      "olean_sha256": "08c5075574f164720494331c2a312428162fd0975ded32c4a15e973f6f622027",
+      "local_imports": [
+        "Generated.Graph"
+      ]
+    },
+    "Generated.GraphTrace": {
+      "source": "Generated/GraphTrace.lean",
+      "sha256": "48785ac377e907e5f8fdd0656e54c18b3e553e0e0a298887c958106ab5f42df9",
+      "olean_sha256": "c0d6cc0128113c43ba3228d330ca7b9af0272654292eb2f670150efda1292d82",
+      "local_imports": [
+        "Generated.Graph",
+        "PrimitiveSemantics"
+      ]
+    },
+    "Generated.H": {
+      "source": "Generated/H.lean",
+      "sha256": "3c734cd1f677f67ddc974f7ed83112fff2654f538c8f014d8430a3deb4a8b656",
+      "olean_sha256": "0af92bb5ee23b6dd65fe905ad973560fa595fd428424494bb586b53dbd9d6f0b",
+      "local_imports": [
+        "Generated.HProduct"
+      ]
+    },
+    "Generated.HProduct": {
+      "source": "Generated/HProduct.lean",
+      "sha256": "bb17ee2286fd6c5007d34fd30faedd0ab0692b93d413e95bb658a220d86c58ba",
+      "olean_sha256": "8ba643a8716229dda7f1ba1fca70bd47e2709953115d71a4cb2c68756b62b649",
+      "local_imports": [
+        "Generated.Adder",
+        "Generated.PredB"
+      ]
+    },
+    "Generated.K": {
+      "source": "Generated/K.lean",
+      "sha256": "4fb8a2a012010baf00429d3f536d461ab0703d08a28373b6dcab00153808b5a2",
+      "olean_sha256": "4dbecf8013cbbb2a64c2d8e404205322fe47a8f0649f4d0b4db982b1466ba3dc",
+      "local_imports": [
+        "Generated.KProduct"
+      ]
+    },
+    "Generated.KProduct": {
+      "source": "Generated/KProduct.lean",
+      "sha256": "557af59520f58f88ac04320062b7eb1efde85b3b6b97578211c2c7c31d63fe54",
+      "olean_sha256": "31748704100fe5624d1fe1f32ddb8cfa7c611204cbe10824dbee79b2868805f4",
+      "local_imports": [
+        "Generated.Adder",
+        "Generated.BH"
+      ]
+    },
+    "Generated.NextB": {
+      "source": "Generated/NextB.lean",
+      "sha256": "20dfc83177480b7a36a58576a9976c7670c41596e11216af36aafb8707932132",
+      "olean_sha256": "c619b531736152630cc58f47717e4eb8eac85dcbb74e04f0f1e030ee2e6dd840",
+      "local_imports": [
+        "Generated.NextBProduct"
+      ]
+    },
+    "Generated.NextBProduct": {
+      "source": "Generated/NextBProduct.lean",
+      "sha256": "92adb5a638cb689119aa79b4441266dd895c0e7c7b40bdaa2c4ac4bf19d18d5c",
+      "olean_sha256": "be03b1433ba8e895ca6c148d931b8fceb31df9a1e0189d72115a16f74dd1544f",
+      "local_imports": [
+        "Generated.Graph",
+        "Generated.Successor"
+      ]
+    },
+    "Generated.One": {
+      "source": "Generated/One.lean",
+      "sha256": "ada4d757e4a82fca253e25a875e56462570e358393d9f43bee8959f61b8279b7",
+      "olean_sha256": "3af008a88129d13fa234a19909535549d15e18df01bf61c11bbd8ee31c874fe5",
+      "local_imports": [
+        "AutomataCertificate"
+      ]
+    },
+    "Generated.PredB": {
+      "source": "Generated/PredB.lean",
+      "sha256": "11964e1896f8f1a6fd7f63e61e700f4e41fa3491b03bc32638789579ba8a3baa",
+      "olean_sha256": "ed4f50c03ee2e11233d23e6fd844203ed040fb930fb0d6f57a268e6128618eb5",
+      "local_imports": [
+        "Generated.PredBProduct"
+      ]
+    },
+    "Generated.PredBProduct": {
+      "source": "Generated/PredBProduct.lean",
+      "sha256": "51b0fe02af9d9a866cd67fde2ab9aeb0d8331cd3fa194f0b14971050878aa357",
+      "olean_sha256": "000d1a22cd49ee36441eecc742662553b2007f885ce93def2448320cba689762",
+      "local_imports": [
+        "Generated.Graph",
+        "Generated.Successor"
+      ]
+    },
+    "Generated.Recurrence": {
+      "source": "Generated/Recurrence.lean",
+      "sha256": "0d2e611e15167de0764840e86ff324c44e83b1276668f15e1c12d35b75c315be",
+      "olean_sha256": "2a00e6c6ea182ffac7bf7a6351187de0a5d7b5537d58a09355dc93bf1a42c4bf",
+      "local_imports": [
+        "Generated.RecurrenceProduct"
+      ]
+    },
+    "Generated.RecurrenceProduct": {
+      "source": "Generated/RecurrenceProduct.lean",
+      "sha256": "9c67d58c6e9a988d4364f578446c66e1ad80041b5a6cd8448fc33c4c2fe08bc6",
+      "olean_sha256": "03d0342a9f244947bac43922aa80b17af24e6a28c4b84309acc574aa1feb03d3",
+      "local_imports": [
+        "Generated.Adder",
+        "Generated.BK",
+        "Generated.Graph"
+      ]
+    },
+    "Generated.Successor": {
+      "source": "Generated/Successor.lean",
+      "sha256": "dc3fecaaeb5d4fae2f058c0204cc26b18b3d7d598b173ac2132b564d04db8cd1",
+      "olean_sha256": "f9b7f9b2e7d0770c4c080aa6658e0caf2107e9fe4c34c88b9b4454b5068b867f",
+      "local_imports": [
+        "Generated.SuccessorProduct"
+      ]
+    },
+    "Generated.SuccessorProduct": {
+      "source": "Generated/SuccessorProduct.lean",
+      "sha256": "919ee9c4f3a6b5d665cf8238d0d09ae1c7feb9beca3de9b95084d6f62f8863fa",
+      "olean_sha256": "607e6f0190753dec681ebc77af950e8036f0ae79fc0c16e3d2077ba29689c742",
+      "local_imports": [
+        "Generated.Adder",
+        "Generated.One"
+      ]
+    },
+    "Generated.TotalDifference": {
+      "source": "Generated/TotalDifference.lean",
+      "sha256": "dd9bc6ebe155ea36399313d04d62160403a281abd76f920e537c120877479edc",
+      "olean_sha256": "b5d7572673550e863d55c2cb4fdfa2158ece0503479c3d10c81cc6f589c4dbbb",
+      "local_imports": [
+        "ConcreteCertificates",
+        "Generated.Difference"
+      ]
+    },
+    "Generated.TotalGraph": {
+      "source": "Generated/TotalGraph.lean",
+      "sha256": "aed2b43b5a29a285eee49db72b794b4c24b85585fc5cd1d94deebf111223c59e",
+      "olean_sha256": "f7b3d06f4fc2b02bd79eda41ded9a32af7d52dbef4d911fa3d5216eaee6170a3",
+      "local_imports": [
+        "ConcreteCertificates",
+        "Generated.GraphDomain"
+      ]
+    },
+    "Generated.TotalRecurrence": {
+      "source": "Generated/TotalRecurrence.lean",
+      "sha256": "2d03b0fa70ccb7af40c09449df8544451915b1253b60369e5536f0e7c4547706",
+      "olean_sha256": "3bbb4844450efb293fdd1cc49fe97bf660324069b905230af904a31595b55437",
+      "local_imports": [
+        "ConcreteCertificates",
+        "Generated.Recurrence"
+      ]
+    },
+    "GlobalConsequences": {
+      "source": "GlobalConsequences.lean",
+      "sha256": "a706ce1b6e856ee5d86cf2db4e448f2c3c4fe4126e47005b831e352bcec02a1c",
+      "olean_sha256": "4abc4bd0e0ca9bfc858c2d8e2472b2cd97d7830801da30d779b13cfc6bd8e8c2",
+      "local_imports": [
+        "GraphCandidate",
+        "OffsetWitnesses"
+      ]
+    },
+    "GraphCandidate": {
+      "source": "GraphCandidate.lean",
+      "sha256": "db7456bb74a89308d3338f4ef1deee2296d0f1cbd53a087e27ebb22f74f32f07",
+      "olean_sha256": "0ee8ab92a05b36117f092f65d8c72f264e44ca4936498d0d57e47a25fdf4b8b6",
+      "local_imports": [
+        "CanonicalCandidate",
+        "Domains",
+        "Generated.GraphTrace",
+        "Generated.TotalGraph"
+      ]
+    },
+    "GreedyRepresentation": {
+      "source": "GreedyRepresentation.lean",
+      "sha256": "a47c23be33d92d377970fb105ef24a62198927178e66a804eff05e7f23961634",
+      "olean_sha256": "282b690844f1433020505caf99036dbebc8baa185ce686e0557302586a182947",
+      "local_imports": [
+        "RecurrenceBridge"
+      ]
+    },
+    "GreedyTail": {
+      "source": "GreedyTail.lean",
+      "sha256": "d9a979a08e41482272e04e3175b08a36966335cf4db0cf1111a59defc5caf052",
+      "olean_sha256": "a8285f3c96e6810497fea40170cfbccf1ca5d10e6c8383dc37b08ae5089b4cde",
+      "local_imports": [
+        "GreedyRepresentation",
+        "Discrepancy"
+      ]
+    },
+    "IrrationalSlope": {
+      "source": "IrrationalSlope.lean",
+      "sha256": "6887b1faada90abc7a119293c680e5e2309e2a36364c9d7458f3af376e1cfe80",
+      "olean_sha256": "14ced78d56f2d0ff070928ebcc1585a7e81b2039537c343dbbaa7b2a46e407cc",
+      "local_imports": [
+        "RationalRootBrackets"
+      ]
+    },
+    "Main": {
+      "source": "Main.lean",
+      "sha256": "c792d85b84d3126a4a85c7fbb619ae606dc7605233dde41154c3d655f7dc139f",
+      "olean_sha256": "96a304120bc350a3aa8a38ddef609976c1fd0823c2b5fb5a2c864c9e18c2c94e",
+      "local_imports": [
+        "SequenceConsequences",
+        "MorphicIdentification",
+        "EffectiveExtrema",
+        "TightGlobalBound",
+        "WordConsequences",
+        "BalanceSharpness"
+      ]
+    },
+    "Morphic": {
+      "source": "Morphic.lean",
+      "sha256": "46db1fe63bc465862ca76c1e697fb63d4a6ff7b83e9268fa3a04152b743c929f",
+      "olean_sha256": "615ed964961653abc5039646662ac6e45e6b776aeb5ec6851640b01d2c49f4a7",
+      "local_imports": [
+        "GreedyRepresentation"
+      ]
+    },
+    "MorphicEnumeration": {
+      "source": "MorphicEnumeration.lean",
+      "sha256": "2783c67102e49c1d5a1ef195b54d3ca7064d05ceaa7cc7cc22af4809c1f947ef",
+      "olean_sha256": "e27821b56f7dfbc613cb889d9bb01831168afee37d9973edfac013aa183e9f56",
+      "local_imports": [
+        "Morphic",
+        "DifferenceSemantics"
+      ]
+    },
+    "MorphicIdentification": {
+      "source": "MorphicIdentification.lean",
+      "sha256": "bcf44abfbc70a2603609529b3ecac297519e567e0814c9685ab03255b686167a",
+      "olean_sha256": "8f5d2e5d536b800c6c08451b3becd6f99a58ebfb5b832a8b3ae6b4fcb76e6120",
+      "local_imports": [
+        "MorphicEnumeration",
+        "FirstDifference"
+      ]
+    },
+    "OffsetWitnesses": {
+      "source": "OffsetWitnesses.lean",
+      "sha256": "e877d386eb41673d148186de66a0b9ba88dca9041f1919720c31c35f854fd382",
+      "olean_sha256": "8a7196b041dcff9ca01a8ed2184cef45a2de9101a6bdd8f029a3bd28450028c0",
+      "local_imports": [
+        "CanonicalCandidate"
+      ]
+    },
+    "PrefixCompression": {
+      "source": "PrefixCompression.lean",
+      "sha256": "10aa81295930fc1655507b30fab31dd194bcf11dd1dd15004ca39599bbc85e20",
+      "olean_sha256": "cff61538356d525ccc570c14941cc5a0453e037e111bcb0008595d6e3a039943",
+      "local_imports": [
+        "GlobalConsequences",
+        "SuffixReachability"
+      ]
+    },
+    "PrimitiveSemantics": {
+      "source": "PrimitiveSemantics.lean",
+      "sha256": "149ac89b8d25fdea8d0b6e5b858ebd7fe59eed672cef402ec014e0117d745827",
+      "olean_sha256": "4017a930c1a70b4c94b4ea5ca92ab68c911344a91d293377274e14b146db6ce5",
+      "local_imports": [
+        "AutomataCertificate",
+        "WordArithmetic",
+        "GreedyRepresentation",
+        "SuffixSoundness"
+      ]
+    },
+    "RationalRootBrackets": {
+      "source": "RationalRootBrackets.lean",
+      "sha256": "8ed08b9715d79eba2286bc41cd8e8f385568ec0e1012bc3a0cf7aff8a9849e13",
+      "olean_sha256": "f293521ba0b3852e50ace884c1ccb6100f8ed28b3b6e3e85a309453c32f7e7c8",
+      "local_imports": [
+        "OffsetWitnesses"
+      ]
+    },
+    "RecurrenceBridge": {
+      "source": "RecurrenceBridge.lean",
+      "sha256": "1c11e9d3b241366816b0d43dec27d61bb08e0a9149196a8acfbfe61e160cb115",
+      "olean_sha256": "d8033b5b64222be91c8729f8cf4c77477e355803074c1498b62b481372fec606",
+      "local_imports": []
+    },
+    "RepresentationIndependence": {
+      "source": "RepresentationIndependence.lean",
+      "sha256": "c6f9873c4cc84a3fbb1a210ebc5096918e0533c7e535ec4151a9f35c750b6e16",
+      "olean_sha256": "02c92a4ad0ee8278c5c4c376efcf134f4f26c4e80dfe56e1fa63781800c2b9c7",
+      "local_imports": [
+        "GreedyRepresentation",
+        "WordArithmetic"
+      ]
+    },
+    "SequenceConsequences": {
+      "source": "SequenceConsequences.lean",
+      "sha256": "a666870e920b67f0cfcf5a903bfb2c129d76932e8bc2068ebab0bf24dfc8383d",
+      "olean_sha256": "181cc5490fd25a4b074c09afc1b75590256acb641c03963aeee77ddb46509899",
+      "local_imports": [
+        "FinalIdentification",
+        "GlobalConsequences",
+        "IrrationalSlope"
+      ]
+    },
+    "SuffixCertificate": {
+      "source": "SuffixCertificate.lean",
+      "sha256": "69228a5ac5bfd31cd7bc6459b46f33c3b931d15dc6d154535d086047c5e2ce20",
+      "olean_sha256": "8699239cb302e19b288d64b06385d4341a3a48061bf3601d85ae12093594e93d",
+      "local_imports": [
+        "Discrepancy"
+      ]
+    },
+    "SuffixReachability": {
+      "source": "SuffixReachability.lean",
+      "sha256": "972c62f6f92247514f022d6b5dbe9cfe38a03d783daba4889a754ebf510bc532",
+      "olean_sha256": "4d719d993282a4c4e0ec78b3a392e6865eb57e3ed728a651cca9d357406dd4fa",
+      "local_imports": [
+        "CandidateDiscrepancy"
+      ]
+    },
+    "SuffixSoundness": {
+      "source": "SuffixSoundness.lean",
+      "sha256": "33b8aea50583ac516250a3b0e30c07a2ba39a4780674245ebd2125c02a783dd3",
+      "olean_sha256": "732cc86938a51a4be9c5cc51feb57d2ee05461bdf927e2bf178d3dbd69d088ed",
+      "local_imports": [
+        "SuffixCertificate"
+      ]
+    },
+    "TightGlobalBound": {
+      "source": "TightGlobalBound.lean",
+      "sha256": "97ff69bdb9283d6b36919bf94cc20a42d0ec4c317ed77bffceba550c5c689b00",
+      "olean_sha256": "4ef468ccf7c3c19185cf6a50c9c2c22b2692506564aff0448a0b9ae83e55d8df",
+      "local_imports": [
+        "TightSuffixSoundness",
+        "FinalIdentification"
+      ]
+    },
+    "TightSuffixCertificate": {
+      "source": "TightSuffixCertificate.lean",
+      "sha256": "7016082d094adedade3b40722ff1345400f0a26cf72d06457f1c66cfd8a89123",
+      "olean_sha256": "4d30c0746e0aec4425626a1f470e8ce8e792f0e999310ad4fdb5a8c91f0df04b",
+      "local_imports": [
+        "SuffixSoundness",
+        "RationalRootBrackets",
+        "AutomataCertificate"
+      ]
+    },
+    "TightSuffixSoundness": {
+      "source": "TightSuffixSoundness.lean",
+      "sha256": "a66247f3437c513dc35f159b1b0c10eb1ba838039e2dd74abb6fa03a406062ff",
+      "olean_sha256": "fbbc213906b5e5196ed52fcb1beea4839f63ea41289d48cb96243281c9d80a9d",
+      "local_imports": [
+        "TightSuffixCertificate",
+        "PrefixCompression"
+      ]
+    },
+    "WeightGrowth": {
+      "source": "WeightGrowth.lean",
+      "sha256": "f914a17bcec0565d54c3125367da20887d593f7194dc6809d41edd6ed1f5b2a0",
+      "olean_sha256": "f1bd1b3942cae647c83f117d867c581964fd72242f8aa9ec0c2234bf4d107be6",
+      "local_imports": [
+        "GreedyRepresentation"
+      ]
+    },
+    "WordArithmetic": {
+      "source": "WordArithmetic.lean",
+      "sha256": "e932fd178c216904842d1084684f8fb9a2747ec15ca69a6e4a13ae514028f72e",
+      "olean_sha256": "1d2c2c14bbb4c72b833854c6c33b30555b808b2cc240b845f88cb3d85354d28f",
+      "local_imports": [
+        "RecurrenceBridge"
+      ]
+    },
+    "WordConsequences": {
+      "source": "WordConsequences.lean",
+      "sha256": "d6fe3b083fe36a7f1c992776762f9bd8535c628ac6bfcde9f7d37c8a11772737",
+      "olean_sha256": "a53bd7bc9362dbc52bb885cc32a909beff9705ec49c98b3ea88eb9d098c71d84",
+      "local_imports": [
+        "MorphicIdentification",
+        "SequenceConsequences",
+        "ComputableSequence"
+      ]
+    }
+  },
+  "limitations": [
+    "The optimized Python suffix DP and K=200 decimal extrema enclosures are separately computed, not asserted by this audit.",
+    "The original six-letter substitution identity remains open.",
+    "Dependency/toolchain provenance is recorded separately by the clean-build runner. Rocq was not compiled."
+  ]
+}

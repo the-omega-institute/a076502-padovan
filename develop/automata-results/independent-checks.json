@@ -1,0 +1,30 @@
+{
+  "independent_recurrence_prefix": 1000000,
+  "morphism_and_two_dfaos": "all matched",
+  "all_four_offsets_witnessed": {
+    "1": {
+      "n": 1,
+      "a": 1,
+      "floor_cn": 0
+    },
+    "0": {
+      "n": 2,
+      "a": 1,
+      "floor_cn": 1
+    },
+    "2": {
+      "n": 93,
+      "a": 54,
+      "floor_cn": 52
+    },
+    "-1": {
+      "n": 1167,
+      "a": 664,
+      "floor_cn": 665
+    }
+  },
+  "large_integer_cases": 100,
+  "largest_random_input_bits": 1024,
+  "seed": 760502,
+  "scope": "Finite diagnostics; universal proof is the separate finite-state inclusion argument."
+}

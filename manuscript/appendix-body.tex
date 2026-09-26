@@ -1,0 +1,168 @@
+\section{Effective extrema: proof and numerical certificates}
+Write $f(n)=a(n)-cn$, $m=\inf_{n\ge0}f(n)$, and
+$M=\sup_{n\ge0}f(n)$. For $K\ge5$, the sparse-tail bound is
+\[
+ R_K=\frac{(5/16)(7/8)^{K-3}}{1-(7/8)^5}.
+\]
+Let $\alpha<c<\beta$ be a rational bracket. A legal suffix of length $K$,
+including the correction output, contributes $A-cB$, where
+$A\in\mathbb Z$ and $0\le B<U_K$. Optimize over suffix paths from the
+$28$ reachable correction/greedy state pairs:
+\[
+ L_K=\min(A-\beta B),\qquad V_K=\max(A-\alpha B).
+\]
+Each pair has a recorded reaching prefix of length at most $H=13$.
+The global bound is $L_K-R_K<f(n)<V_K+R_K$.
+
+\subsection{Proof of the effective-extrema proposition}
+Join a minimizing suffix path to its recorded reaching prefix, producing
+a legal word for an integer $n_-$. Likewise obtain $n_+$ from a maximizing
+path. Each concatenation is legal because its prefix reaches the initial
+state of the chosen suffix. Since their lengths are at most $K+H$, both integers
+are smaller than $U_{K+H}$ by the greedy-language bound in the main text.
+
+Use the representation formula and root bracket to enclose their
+discrepancies. If $u_-$ is the upper endpoint for $f(n_-)$ and $\ell_+$
+is the lower endpoint for $f(n_+)$, then
+\begin{equation}
+ L_K-R_K\le m\le u_-,\qquad
+ \ell_+\le M\le V_K+R_K.
+\end{equation}
+The chosen minimizing suffix has true value at most
+$L_K+(\beta-\alpha)U_K$. Its high-prefix contribution is less than $R_K$
+in absolute value, and enclosing its full discrepancy adds at most
+$(\beta-\alpha)U_{K+H}$. Thus each enclosure has width at most
+\begin{equation}
+ 2R_K+(\beta-\alpha)(U_K+U_{K+H}).
+\end{equation}
+The maximum is symmetric. Exact bisection of
+$P(t)=t^3-t^2+2t-1$ on $[0,1]$ supplies a bracket of width
+$2^{-4K-64}$. Since $U_j<2^{j+1}$, the second term tends to zero;
+$R_K$ tends to zero geometrically as well. This proves the proposition.
+
+\subsection{Exact computation and witnesses}
+Table~\ref{tab:bounds} gives rational enclosures of the global extrema
+with outward-rounded decimal endpoints.
+\begin{table}[htbp]
+\centering\small
+\input{generated/bounds-table.tex}
+\caption{Global discrepancy bounds. The last column bounds the larger
+exact extrema-enclosure width, rounded upwards.}
+\label{tab:bounds}
+\end{table}
+
+For $K=200$, the root bracket uses $864$ exact bisection steps.
+Representative witnesses are
+\begin{align*}
+ n_-&=27957586325095713833899543,&
+ a(n_-)&=15931359127095736187627998,\\
+ n_+&=9231177514959072345795515,&
+ a(n_+)&=5260296881378963990671881.
+\end{align*}
+The representation formula evaluates these large values directly from
+their greedy representations. Exact discrepancy brackets
+and greedy words are recorded in \path{develop/automata-results/extrema.json}.
+For suffix lengths $5,8,12$, exhaustive enumeration agrees with the
+dynamic program. All eight stored witnesses at four cutoffs are accepted
+by the synchronized graph, and the two small witnesses also agree with
+direct recurrence evaluation.
+
+\section{Verification scope and reproduction}
+\subsection{Finite-state and independent checks}
+Products implement intersection, subset construction implements
+existential projection, and inclusion is decided by exhaustive reachability
+against the complement of the target. Undefined transitions reject.
+Each inclusion either returns a counterexample or exhausts the finite
+search space.
+
+Two separately written Python implementations reproduce the principal
+recurrence checks. The second imports the literal correction table,
+but none of the first implementation's automata or transformation code.
+At carry cutoffs $8$ and $10$ it passes adder totality, graph totality,
+the recurrence and value bounds. The morphic presentation and representation
+order were also compared with the literal recurrence through $100{,}000$
+terms; this is a diagnostic, not an all-index proof.
+
+Walnut~7.1.0 imports the base adder, candidate graph, greedy domains,
+constants and difference relation, then reconstructs all intermediate
+quantified relations. Adder totality, graph totality, value bounds,
+positivity, the recurrence and the difference identity all return
+\code{TRUE}. Integer interpretation still rests on the carry proof.
+
+\subsection{Lean scope}
+The Lean development checks canonical greedy representations, recognition,
+carry and delay semantics, finite-language inclusion and projection,
+totality, and identification with the literal nested recurrence. It also
+proves the exact four offsets, slope limit, concrete $26$-letter morphic
+identity, irrational frequency, nonperiodicity, and exact balance constant
+$4$. In \path{develop/lean/BalanceSharpness.lean}, the two length-$72$
+factors have $43$ and $39$ ones. The theorem \code{exact\_balance} states
+that a natural number $C$ is a uniform balance bound if and only if $4\le C$.
+
+A real quadratic contraction and sparse tail supply the analytic bound.
+The $K=105$ Bellman certificate with a $160$-bit dyadic root bracket
+proves $-1.049234<f(n)<1.155081$ in the kernel.
+The formal extrema algorithm searches $n<U_{K+16}$ and uses a bracket of
+width $2^{-4K-64}$. A prefix-compression lemma bounds the discrepancy
+outside this window, proving rational enclosures and convergence.
+This exhaustive algorithm establishes computability; it is distinct from
+the faster suffix optimizer used for the narrow $K=200$ decimals.
+
+Final theorem axiom closures contain only \code{propext},
+\code{Classical.choice}, and \code{Quot.sound}. No admitted proofs,
+extra axioms, or native decision axioms are used. Kernel reduction checks
+the generated finite certificates. The narrow $K=200$ decimals and
+the original six-letter identity are not asserted as Lean theorems.
+
+\newpage
+\subsection{Reproduction commands}
+The reproducibility package is available at
+\url{https://github.com/the-omega-institute/a076502-padovan}.
+
+From the package's \path{develop/} directory, standard-library Python~3
+reconstructs the finite-state proof and certificates:
+\begin{verbatim}
+python3 automata_proof.py --bound 8
+python3 discrepancy_certificate.py
+python3 morphic_certificate.py
+python3 extrema_certificate.py
+python3 paper_checks.py
+\end{verbatim}
+The original literal tables and independent verifier are retained,
+unmodified, in \path{correspondence/attachments/}.
+
+Reports in \path{develop/automata-results/} include
+\path{report.json}, \path{morphic-presentation.json}, \path{extrema.json},
+\path{paper-checks.json}, and \path{walnut.json}.
+The optional million-term diagnostic is \code{independent\_checks.py}.
+Walnut can be replayed using \code{walnut\_check.py} with Java and the
+pinned jar described in \path{develop/walnut/README.md}.
+
+The Lean toolchain is $4.33.0$, with Mathlib pinned to
+\begin{quote}\small\ttfamily
+db584cd6d46c92f209a44c0f1c829460d327499d.
+\end{quote}
+With Elan, Git, Python~3 and network access available, run from the
+extracted research package root:
+\begin{verbatim}
+python3 develop/clean_ci.py
+\end{verbatim}
+This command rebuilds the Lean development in a fresh Lake project
+with the pinned dependencies and records source hashes and final axiom
+closures in \path{develop/ci-results/}. The README of the package gives
+the details.
+
+\clearpage
+\section{The finite-state tables}
+Table~\ref{tab:dfao} specifies both input transition functions and outputs.
+The initial state is $0$ for both automata. A dash denotes an undefined
+transition. The transition functions are not identical: state $22$ has
+different digit-$1$ successors in $E$ and $D$. Representations are always
+restricted to the greedy language.
+\begin{table}[htbp]
+\centering\small
+\input{generated/dfao-table.tex}
+\caption{The $E$- and $D$-DFAOs used in the main text. Columns $0$ and $1$
+give successor states; ``out'' gives the output.}
+\label{tab:dfao}
+\end{table}

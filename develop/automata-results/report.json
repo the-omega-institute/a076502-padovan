@@ -1,0 +1,64 @@
+{
+  "bound": 8,
+  "adder": {
+    "states": 411,
+    "accepting": 118
+  },
+  "domain": {
+    "states": 39,
+    "accepting": 39
+  },
+  "totality_counterexample": null,
+  "seconds": 0.2030116249807179,
+  "graph": {
+    "states": 72,
+    "accepting": 30
+  },
+  "graph_totality_counterexample": null,
+  "identification": {
+    "bounded": {
+      "states": 6,
+      "accepting": 6
+    },
+    "bounded_counterexample": null,
+    "positive_counterexample": null,
+    "successor": {
+      "states": 12,
+      "accepting": 6
+    },
+    "b_of_predecessor": {
+      "states": 79,
+      "accepting": 35
+    },
+    "h": {
+      "states": 113,
+      "accepting": 45
+    },
+    "b_of_h": {
+      "states": 144,
+      "accepting": 53
+    },
+    "k": {
+      "states": 81,
+      "accepting": 38
+    },
+    "b_of_k": {
+      "states": 80,
+      "accepting": 34
+    },
+    "recurrence": {
+      "states": 7,
+      "accepting": 6
+    },
+    "recurrence_counterexample": null,
+    "first_difference": {
+      "states": 12,
+      "accepting": 7
+    },
+    "difference_counterexample": null,
+    "base_values": {
+      "b(0)": 0,
+      "b(1)": 1
+    }
+  }
+}

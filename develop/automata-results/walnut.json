@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "errors": false,
+  "session": "walnut/run-vhx674tk",
+  "jar_sha256": "dab1c00fef7408ea44c1b31a4897a9325930539034a3c79cf570f61c034616df",
+  "walnut_tag": "v7.1.0",
+  "walnut_commit": "67e69c248d07324b25de1d4a498e877ac504999a",
+  "checks": {
+    "adderTotality": true,
+    "graphTotality": true,
+    "valueBound": true,
+    "positive": true,
+    "recurrence": true,
+    "difference": true
+  },
+  "scope": "Base tables imported; all quantified formulas reconstructed by Walnut. Integer semantics rely on the mathematical carry invariant."
+}

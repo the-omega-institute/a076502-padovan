@@ -1,0 +1,17 @@
+adder: 411 states
+graph (n,b(n)): 72 states
+(n, b(n-1)): 79 states
+(n, b(n-b(n-1))): 144 states
+(n, b(n-b(n-b(n-1)))): 80 states
+Good(n): 7 states
+adder totality, 000(GxG) included in exists z: OK
+graph totality on 000G: OK
+recurrence for all n>=2, (000G, value>=2) included in Good: OK
+b(n) <= n for all n: OK
+b(n) = 0 only for n = 0: OK
+b(0) = 0 ; b(1) = 1
+part 1 done in 0.5 s ; carry box = [-8,8]^3
+reachable (E,G) pairs: 28
+K=20: suffix in [-1.020207166, 1.132003468] ; tail R=6.628e-02 ; final enclosure (-1.086486, 1.198283) ; inside (-11/10, 6/5): True
+K=40: suffix in [-1.048109391, 1.153292020] ; tail R=4.587e-03 ; final enclosure (-1.052696, 1.157879) ; inside (-11/10, 6/5): True
+K=70: suffix in [-1.049204783, 1.155056432] ; tail R=8.352e-05 ; final enclosure (-1.049288, 1.155140) ; inside (-11/10, 6/5): True

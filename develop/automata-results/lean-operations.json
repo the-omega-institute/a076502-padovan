@@ -1,0 +1,157 @@
+[
+  {
+    "name": "BoundedProduct",
+    "kind": "product",
+    "raw": 388,
+    "live": 173,
+    "result": 116
+  },
+  {
+    "name": "Bounded",
+    "kind": "projection",
+    "raw": 49,
+    "result": 6
+  },
+  {
+    "name": "ZerosProduct",
+    "kind": "product",
+    "raw": 3,
+    "live": 1,
+    "result": 1
+  },
+  {
+    "name": "Zeros",
+    "kind": "projection",
+    "raw": 3,
+    "result": 1
+  },
+  {
+    "name": "SuccessorProduct",
+    "kind": "product",
+    "raw": 41,
+    "live": 21,
+    "result": 11
+  },
+  {
+    "name": "Successor",
+    "kind": "projection",
+    "raw": 15,
+    "result": 12
+  },
+  {
+    "name": "PredBProduct",
+    "kind": "product",
+    "raw": 169,
+    "live": 131,
+    "result": 109
+  },
+  {
+    "name": "PredB",
+    "kind": "projection",
+    "raw": 111,
+    "result": 79
+  },
+  {
+    "name": "HProduct",
+    "kind": "product",
+    "raw": 480,
+    "live": 253,
+    "result": 164
+  },
+  {
+    "name": "H",
+    "kind": "projection",
+    "raw": 147,
+    "result": 113
+  },
+  {
+    "name": "BHProduct",
+    "kind": "product",
+    "raw": 565,
+    "live": 403,
+    "result": 212
+  },
+  {
+    "name": "BH",
+    "kind": "projection",
+    "raw": 163,
+    "result": 144
+  },
+  {
+    "name": "KProduct",
+    "kind": "product",
+    "raw": 604,
+    "live": 364,
+    "result": 246
+  },
+  {
+    "name": "K",
+    "kind": "projection",
+    "raw": 198,
+    "result": 81
+  },
+  {
+    "name": "BKProduct",
+    "kind": "product",
+    "raw": 302,
+    "live": 209,
+    "result": 162
+  },
+  {
+    "name": "BK",
+    "kind": "projection",
+    "raw": 129,
+    "result": 80
+  },
+  {
+    "name": "RecurrenceProduct",
+    "kind": "product",
+    "raw": 206,
+    "live": 184,
+    "result": 116
+  },
+  {
+    "name": "Recurrence",
+    "kind": "projection",
+    "raw": 49,
+    "result": 7
+  },
+  {
+    "name": "GraphDomain",
+    "kind": "projection",
+    "raw": 48,
+    "result": 6
+  },
+  {
+    "name": "AdderDomain",
+    "kind": "projection",
+    "raw": 448,
+    "result": 39
+  },
+  {
+    "name": "NextBProduct",
+    "kind": "product",
+    "raw": 180,
+    "live": 151,
+    "result": 108
+  },
+  {
+    "name": "NextB",
+    "kind": "projection",
+    "raw": 91,
+    "result": 89
+  },
+  {
+    "name": "DifferenceProduct",
+    "kind": "product",
+    "raw": 342,
+    "live": 227,
+    "result": 119
+  },
+  {
+    "name": "Difference",
+    "kind": "projection",
+    "raw": 61,
+    "result": 12
+  }
+]

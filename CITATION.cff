@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite this reproducibility package and its accompanying research note."
+type: software
+title: "A Padovan-automatic description of a nested recurrence: reproducibility package"
+authors:
+  - family-names: "Cloitre"
+    given-names: "Benoit"
+  - family-names: "Ma"
+    given-names: "Haobo"
+    affiliation: "ChronoAI Pte Ltd; The Omega Institute"
+  - family-names: "Zhang"
+    given-names: "Wenlin"
+    affiliation: "National University of Singapore; The Omega Institute"
+repository-code: "https://github.com/the-omega-institute/a076502-padovan"
+url: "https://github.com/the-omega-institute/a076502-padovan"
+abstract: >-
+  Exact finite-state computations, Lean proofs, and verification records for
+  the Padovan-automatic identification of OEIS A076502, its discrepancy bounds,
+  explicit morphic presentation, and least balance constant four.
+keywords:
+  - A076502
+  - Padovan numeration
+  - nested recurrence
+  - finite automata
+  - Lean
+  - computer-assisted proof

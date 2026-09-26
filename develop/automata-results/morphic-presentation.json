@@ -1,0 +1,136 @@
+{
+  "status": "constructive_morphism_with_written_all_index_proof_not_Lean",
+  "alphabet_size": 26,
+  "reachable_positive_representation_states": 27,
+  "removed_terminal_D_states": [
+    6,
+    21
+  ],
+  "seed": "S",
+  "substitution": {
+    "S": [
+      "S",
+      "q1"
+    ],
+    "q1": [
+      "q2"
+    ],
+    "q2": [
+      "q3"
+    ],
+    "q3": [
+      "q4"
+    ],
+    "q4": [
+      "q5"
+    ],
+    "q5": [
+      "q7",
+      "q8"
+    ],
+    "q7": [
+      "q9",
+      "q10"
+    ],
+    "q8": [
+      "q11"
+    ],
+    "q9": [
+      "q5",
+      "q12"
+    ],
+    "q10": [
+      "q13"
+    ],
+    "q11": [
+      "q14"
+    ],
+    "q12": [
+      "q15"
+    ],
+    "q13": [
+      "q16"
+    ],
+    "q14": [
+      "q17"
+    ],
+    "q15": [
+      "q18"
+    ],
+    "q16": [
+      "q19"
+    ],
+    "q17": [
+      "q20"
+    ],
+    "q18": [
+      "q22"
+    ],
+    "q19": [
+      "q23"
+    ],
+    "q20": [
+      "q24",
+      "q1"
+    ],
+    "q22": [
+      "q9"
+    ],
+    "q23": [
+      "q25",
+      "q10"
+    ],
+    "q24": [
+      "q26",
+      "q1"
+    ],
+    "q25": [
+      "q20",
+      "q27"
+    ],
+    "q26": [
+      "q23",
+      "q8"
+    ],
+    "q27": [
+      "q15"
+    ]
+  },
+  "output_morphism": {
+    "S": "10",
+    "q1": "1",
+    "q2": "0",
+    "q3": "1",
+    "q4": "10",
+    "q5": "01",
+    "q7": "11",
+    "q8": "0",
+    "q9": "10",
+    "q10": "0",
+    "q11": "1",
+    "q12": "1",
+    "q13": "1",
+    "q14": "0",
+    "q15": "1",
+    "q16": "0",
+    "q17": "01",
+    "q18": "0",
+    "q19": "11",
+    "q20": "10",
+    "q22": "11",
+    "q23": "01",
+    "q24": "00",
+    "q25": "01",
+    "q26": "11",
+    "q27": "1"
+  },
+  "indexing": "output(n) = a(n+1)-a(n), n>=0; first output is 1",
+  "non_erasing_substitution": true,
+  "non_erasing_output": true,
+  "original_six_letter_identity": "not established",
+  "diagnostics": {
+    "terms_compared_with_literal_recurrence": 100000,
+    "canonical_words_checked_in_genealogical_order": 100000,
+    "difference_prefix_from_n_zero": "101011001110100101110110100110010111001110110100111010011001011101001011100111011"
+  }
+}

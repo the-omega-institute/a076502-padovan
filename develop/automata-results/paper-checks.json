@@ -1,0 +1,38 @@
+{
+  "author": {
+    "sha256": "368a223da152d7228acc6ab99f432b6019684ccb58adee39ae32e74803bf1045",
+    "bytes": 11023,
+    "E_table_matches_original_attachment": true,
+    "replays": [
+      {
+        "carry_box": 8,
+        "required_checks_pass": true
+      },
+      {
+        "carry_box": 10,
+        "required_checks_pass": true
+      }
+    ]
+  },
+  "suffix_DP": [
+    {
+      "suffix_length": 5,
+      "enumerated_accepted_paths": 121,
+      "DP_matches_enumeration": true
+    },
+    {
+      "suffix_length": 8,
+      "enumerated_accepted_paths": 281,
+      "DP_matches_enumeration": true
+    },
+    {
+      "suffix_length": 12,
+      "enumerated_accepted_paths": 865,
+      "DP_matches_enumeration": true
+    }
+  ],
+  "witness_checks": {
+    "witnesses_accepted_by_saved_graph": 8,
+    "small_witnesses_match_literal_recurrence": 2
+  }
+}

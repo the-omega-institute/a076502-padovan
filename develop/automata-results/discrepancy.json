@@ -1,0 +1,33 @@
+{
+  "suffix_length": 20,
+  "prefix_states": 28,
+  "c_interval": [
+    "284920145499/500000000000",
+    "569840290999/1000000000000"
+  ],
+  "suffix_lower": "-1020207166563/1000000000000",
+  "suffix_upper": "566001733763/500000000000",
+  "tail_bound": "1163152569936035/17549305090932736",
+  "lower": "-4655048679664588051118483/4284498313216000000000000",
+  "upper": "5134039742564349827545491/4284498313216000000000000",
+  "decimal_bounds_display_only": [
+    -1.0864862906598856,
+    1.1982825916228854
+  ],
+  "simple_strict_bounds": [
+    "-11/10",
+    "6/5"
+  ],
+  "sharp_floor_offsets_contained_in": [
+    -1,
+    0,
+    1,
+    2
+  ],
+  "assumptions": [
+    "Exact greedy-language lemma",
+    "Quadratic-energy tail lemma",
+    "b(n)=shift2(n)+E(greedy(n))",
+    "c=rho^-2"
+  ]
+}
