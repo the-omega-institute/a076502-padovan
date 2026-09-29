@@ -9,6 +9,7 @@ uniform discrepancy bound, an explicit 26-letter non-erasing morphic
 presentation, and least balance constant 4. The repository includes the
 mathematical manuscript, exact computational certificates, and Lean proofs.
 
+- Read the paper on arXiv: [arXiv:2609.33421](https://arxiv.org/abs/2609.33421).
 - [Read the manuscript](manuscript/output/pdf/paper.pdf).
 - [Compile the LaTeX source](manuscript/BUILD.md).
 - [Inspect the formal theorem scope](develop/lean/README.md).
@@ -85,6 +86,7 @@ Authors are listed alphabetically:
 - Haobo Ma, ChronoAI Pte Ltd; The Omega Institute.
 - Wenlin Zhang, National University of Singapore; The Omega Institute.
 
+The paper is [arXiv:2609.33421](https://arxiv.org/abs/2609.33421).
 Use [CITATION.cff](CITATION.cff) for repository citation metadata. The paper
 contains the contribution and AI-use statements. This is a joint paper's
 artifact repository maintained under The Omega Institute. Related work and

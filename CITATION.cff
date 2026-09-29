@@ -27,3 +27,19 @@ keywords:
   - finite automata
   - Lean
   - computer-assisted proof
+references:
+  - type: article
+    title: "A Padovan-automatic description of a nested recurrence"
+    authors:
+      - family-names: "Cloitre"
+        given-names: "Benoit"
+      - family-names: "Ma"
+        given-names: "Haobo"
+      - family-names: "Zhang"
+        given-names: "Wenlin"
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2609.33421"
+        description: "arXiv identifier"
+    url: "https://arxiv.org/abs/2609.33421"
